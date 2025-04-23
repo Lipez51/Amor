@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe4ec, #ffd6f3);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #e91e63;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 1rem 0; 
+    position: relative;
+    z-index: 2;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  #btn-sim {
+    background-color: #e91e63;
+    color: white;
+  }
+  
+  #btn-nao {
+    background-color: #f8bbd0;
+    color: #333;
+  }
+  .oculto {
+    display: none;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #4caf50;
+  }
+
+  .teamo {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    animation: rainbow 3s ease-in-out infinite; 
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    background-size: 200%; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
