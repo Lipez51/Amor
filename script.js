@@ -1,14 +1,8 @@
 const btnSim = document.getElementById("btn-sim");
 const btnNao = document.getElementById("btn-nao");
 const mensagem = document.getElementById("mensagem");
-const teamo = document.querySelector(".teamo");
 
-btnSim.addEventListener("click", () => {
-  mensagem.classList.remove("oculto");
-  teamo.classList.remove("oculto");
-});
-
-btnNao.addEventListener("mouseover", () => {
+function moverBotao() {
   const larguraJanela = window.innerWidth - btnNao.offsetWidth;
   const alturaJanela = window.innerHeight - btnNao.offsetHeight;
 
@@ -18,4 +12,14 @@ btnNao.addEventListener("mouseover", () => {
   btnNao.style.position = "absolute";
   btnNao.style.left = `${Math.min(larguraJanela, posX)}px`;
   btnNao.style.top = `${Math.min(alturaJanela, posY)}px`;
+}
+
+// Faz o botão fugir quando passa o mouse
+btnNao.addEventListener("mouseover", moverBotao);
+
+// Faz o botão fugir quando clica (principalmente para celular)
+btnNao.addEventListener("click", moverBotao);
+
+btnSim.addEventListener("click", () => {
+  mensagem.classList.remove("oculto");
 });
