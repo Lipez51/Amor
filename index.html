@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="carta">
     <h1>Aceita namorar comigo? 💌</h1>
 
     <button id="btn-sim">Sim 💘</button>
     <button id="btn-nao">Não 😢</button>
 
     <section id="mensagem" class="oculto">
-      <p>YEEEI!! 💕 Você me faz a pessoa mais feliz do mundo! 😍</p>
+      <p>💕 Você me faz a pessoa mais feliz do mundo! 💕</p>
       <p>Então, aqui vão algumas palavras que quero te dizer...</p>
       
       <p>Desde que você entrou na minha vida, tudo ganhou uma nova cor. Cada momento ao seu lado é mais bonito, mais leve,
@@ -24,12 +24,33 @@
       então você apareceu.</p>
     
       <p>Você é especial de um jeito que palavras quase não conseguem explicar. É o seu sorriso que acalma meu coração, o
-      seu jeito que me faz querer ser melhor a cada dia.</p>
+      seu jeito que me faz querer ser melhor a cada dia, seu olhar que me ilumina.</p>
     
-      <p>Eu te amo com uma intensidade que nunca senti antes. Então posso dizer com toda certeza do mundo:</p>
+      <p>Eu te amo com uma intensidade e profundidade que nunca senti antes.</p>
+      <br>
+      <p>Então posso dizer com toda certeza do mundo:</p>
     
       <div class="teamo oculto">Eu te amo!!!</div>
     </section>
+
+    <div class="player">
+      <img id="cover" src="" alt="Capa da música" class="cover"/>
+      <audio id="audio"></audio>
+      <div class="controls">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress" value="0" />
+        <span id="duration">0:00</span>
+      </div>
+      <div class="buttons">
+        <button id="prev">&#9664;</button>
+        <button id="play">⏸️</button>
+        <button id="next">&#9654;</button>
+      </div>
+      <div class="volume-container">
+        <label for="volume">🔊</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.3">
+      </div>
+    </div>
 
   <script src="script.js"></script>
 </body>

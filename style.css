@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
   
   body {
     height: 100vh;
-    background: linear-gradient(135deg, #ffe4ec, #ffd6f3);
+    background: linear-gradient(135deg, #2e0101, #360063);
     font-family: 'Comic Sans MS', cursive, sans-serif;
     display: flex;
     align-items: center;
@@ -42,9 +44,9 @@
     z-index: 2;
   }
   
-  .container {
+  .carta {
     text-align: center;
-    background-color: white;
+    background-color: rgb(44, 44, 44);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -52,6 +54,7 @@
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    max-width: 80rem;
   }
   
   #btn-sim {
@@ -60,14 +63,23 @@
   }
   
   #btn-nao {
-    background-color: #f8bbd0;
-    color: #333;
+    background-color: #353535;
+    color: #ffffff;
   }
   .oculto {
+    font-family: 'Playwrite DK Loopet', cursive;
+    font-weight: 300;
     display: none;
     margin-top: 2rem;
     font-size: 1.2rem;
     color: #4caf50;
+  }
+
+  #mensagem p {
+    font-family: 'Playwrite DK Loopet', cursive;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.2rem;
   }
 
   .teamo {
@@ -104,4 +116,55 @@
     100% {
       background-position: 0%;
     }
+  }
+
+  .player {
+    background-color: #121212;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .cover {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  #progress {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .buttons button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  #volume {
+    width: 100px;
+    cursor: pointer;
   }
