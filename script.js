@@ -35,12 +35,6 @@ const cover = document.getElementById('cover');
 
 const musicas = [
   {
-    nome: "Justin Timberlake",
-    arquivo: "justin.mp3",
-    inicio: 44,
-    capa: "justin.png"
-  }
-  {
     nome: "beabadoobee",
     arquivo: "beabadoobee.mp3",
     inicio: 8,
@@ -52,6 +46,12 @@ const musicas = [
     inicio: 68,
     capa: "luan.png"
   },
+  {
+    nome: "Justin Timberlake",
+    arquivo: "justin.mp3",
+    inicio: 44,
+    capa: "justin.png"
+  }
 ];
 
 let musicaAtual = 0;
