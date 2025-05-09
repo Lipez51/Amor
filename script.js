@@ -14,10 +14,8 @@ function moverBotao() {
   btnNao.style.top = `${Math.min(alturaJanela, posY)}px`;
 }
 
-// Faz o botão fugir quando passa o mouse
 btnNao.addEventListener("mouseover", moverBotao);
 
-// Faz o botão fugir quando clica (principalmente para celular)
 btnNao.addEventListener("click", moverBotao);
 
 btnSim.addEventListener("click", () => {
